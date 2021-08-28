@@ -20,4 +20,10 @@ router
   .put(updatePizza)
   .delete(deletePizza);
 
+  //PUT to handle addNewReply
+  router
+  .route('/:pizzaId/:commentId')
+  .put(addReply)
+  .delete(removeComment)
+
   module.exports = router;
